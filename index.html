@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planets</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Yesteryear&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">Explore.</a>
+
+
+          
+          <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+        <div >
+          <ul class="nav-links">
+            <li><a href=""><img src="./images/linkedin.png" alt="" /></a></li>
+            <li><a href=""><img src="./images/facebook.png" alt="" /></a></li>
+            <li><a href=""><img src="./images/instagram-logo.png" alt="" /></a></li>
+          </ul>
+      </div>
+    </header>
+
+
+    <section id="sectionone" class="screen" style="padding-bottom: 60px;">
+      <div id="scene">
+        <div data-depth="0.1" class="bg" id="bg">
+          <img src="./images/image.jpg" alt="" />
+        </div>
+        <div data-depth="0.1" class="cloud" id="cloud">
+          <img src="./images/cloud.png" alt="" />
+        </div>
+        <div data-depth="0.2" class="star" id="star">
+          <img src="./images/star.png" alt="" />
+        </div>
+
+        <div data-depth="1.2" class="earth" id="earth">
+          <img src="./images/earth.png" alt="" />
+        </div>
+        <div data-depth="0.1" class="text" id="text" style="width: 100%; text-align: center; margin: 0 auto;">
+          <h1>Planet of the Apes</h1>
+        </div>
+        <div data-depth="0.4" class="mid" id="mid">
+          <img src="./images/mid.png" alt="" />
+        </div>
+        <div data-depth="0.1" class="fore" id="fore">
+          <img src="./images/m_3.png" alt="" />
+        </div>
+        <div data-depth="0.1" class="fore1" id="fore1">
+          <img src="./images/car.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section data-aos="flip-left" class="about" id="about" style="margin: 10%; align-items: center; color: antiquewhite; height: 60vh;">
+
+        <h2 style="font-size: 3rem;" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Paralax Effect and Animation</h2>
+        <p  style="font-size: 1rem; text-align: justify; line-height: 1.5rem;" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">When incorporating parallax effects and animations into a website, HTML, CSS, and JavaScript work together to create dynamic and visually engaging experiences for users. In HTML, elements can be structured to enable parallax effects through attributes like data-depth in libraries such as Parallax.js. By assigning different depth values to elements, the illusion of depth and movement can be achieved as users scroll through the webpage. For instance, div elements with the parallax class can be given specific data-depth attributes to control the speed and direction of the parallax effect. <br> <br>
+
+        CSS plays a fundamental role in styling and animating elements for both parallax and general animations. By defining properties such as position, background images, and transitions, CSS empowers developers to enhance the visual appeal of elements targeted for parallax effects. Additionally, CSS can be used to create keyframes for animations, adding movement and interactivity to specific elements on the page. Utilizing CSS animations and transitions, developers can bring elements to life, making the user experience more engaging and interactive.
+        <br> <br>
+          
+        JavaScript is instrumental in implementing advanced parallax effects and animations by providing interactivity and dynamic behavior. JavaScript libraries like GSAP can be used to create complex animations with precise control over timing, easing, and sequencing. With JavaScript, developers can manipulate element properties, trigger animations based on user interactions, and customize the behavior of elements during scrolling events. Through JavaScript, parallax effects can be fine-tuned and animations can be tailored to respond to user actions, resulting in a more immersive and interactive website experience. <br> <br>
+          
+        It is essential to consider performance optimization when integrating parallax effects and animations in web development. Careful attention should be paid to the size and complexity of animations to ensure smooth rendering and functionality across different devices and browsers. By efficiently leveraging HTML, CSS, and JavaScript in harmony, developers can create captivating and seamless parallax effects and animations that enhance the overall user experience on a webpage.
+        </p>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="./index.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
